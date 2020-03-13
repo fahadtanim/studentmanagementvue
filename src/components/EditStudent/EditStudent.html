@@ -1,0 +1,29 @@
+<div id="editStudentModal" class="modal">
+    <div class="row">
+        <form class="col s12" v-on:submit="this.editStudent">
+            <div class="row center-align">
+                <div class="input-field col s6">
+                    <input id="name" v-model="student.name" type="text">
+                    <label for="name">Student Name</label>
+                </div>
+            </div>
+            <div class="row center-align">
+                <div class="input-field col s6">
+                    <input id="dept" v-model="student.departmentName" type="text">
+                    <label for="dept">Department</label>
+                </div>
+            </div>
+            <div class="row center-align">
+                <div class="input-field col s6">
+                    <input id="credit_completed" v-model="student.creditCompleted" type="text">
+                    <label for="credit_completed">Credit Completed</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6 left-align">
+                    <button type="submit" class="btn waves-effect waves-teal">Edit Student</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

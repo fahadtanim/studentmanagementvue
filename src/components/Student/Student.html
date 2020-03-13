@@ -1,0 +1,7 @@
+<tr>
+    <td>{{student.name}}</td>
+    <td>{{student.departmentName}}</td>
+    <td>{{student.creditCompleted}}</td>
+    <td><button class="btn waves-effect waves-teal" @click='$emit("on-edit", student)'>Edit</button></td>
+    <td><button class="btn waves-effect waves-teal" v-on:click="this.deleteStudent">Delete</button></td>
+</tr>
